@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: Poppins;
+            font-size: 10px !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.2.1/dist/css/tom-select.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.1/dist/js/tom-select.complete.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Tom Select</h1>
+
+    <div class="" style="width: 50%;margin: 40px auto;">
+        <input type="text" id="input-tags" class="input-tags" value="html,css,javascript,react" autocomplete="off"
+            placeholder="Select frameworks?">
+    </div>
+
+
+    <script>
+        new TomSelect("#input-tags", {
+            plugins: {
+                remove_button: {
+                    title: 'Remove this item',
+                }
+            },
+            persist: false,
+            createOnBlur: true,
+            create: false
+            
+        });
+    </script>
+
+
+</body>
+
+</html>
